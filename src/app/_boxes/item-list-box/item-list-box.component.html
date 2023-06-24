@@ -1,0 +1,21 @@
+<div class="product-box">
+  <div class="img-wrapper">
+    <div class="front">
+      <a routerLink="/ItemDetails/{{item.ItemId}}"><img [src]="ServerUrl+item.ImageName" class="img-fluid blur-up lazyload bg-img" alt=""></a>
+    </div>
+    <div class="back">
+      <a routerLink="/ItemDetails/{{item.ItemId}}"><img [src]="ServerUrl+item.ImageName" class="img-fluid blur-up lazyload bg-img" alt=""></a>
+    </div>
+
+  </div>
+  <div class="product-detail">
+    <div>
+      <div class="rating"><i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i></div>
+      <a routerLink="/ItemDetails/{{item.ItemId}}">
+        <h6>{{item.ItemName}}</h6>
+      </a>
+      <p>{{item.Descreption}}</p>
+      <h4>{{item.SalesPrice |  currency:'EGP':'symbol':'4.2-2'}}</h4>
+    </div>
+  </div>
+</div>
