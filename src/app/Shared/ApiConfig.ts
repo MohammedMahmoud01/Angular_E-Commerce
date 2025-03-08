@@ -1,6 +1,6 @@
 export class ApiConfig
 {
-    static ServerUrl="http://172.24.128.1:2312";
+    static ServerUrl="http://localhost:8020";
     static HomePageApiEndPoint="/api/homepageapi";
     static SlidersApiEndPoint="/api/SliderApi";
     static HomePageApi2EndPoint="/api/homepageapi2";

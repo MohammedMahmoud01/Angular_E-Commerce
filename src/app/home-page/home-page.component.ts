@@ -4,7 +4,7 @@ import {IItems} from "../Shared/Models";
 import {DataServices} from "../Shared/ApiServices";
 import {MessageService} from "../Shared/Message";
 import {ApiConfig} from "../Shared/ApiConfig";
-
+declare var Swal: any;
 declare var $: any;
 @Component({
   selector: 'app-home-page',
@@ -22,7 +22,12 @@ export class HomePageComponent implements OnInit {
   Sliders : any;
 
   ngOnInit(): void {
-
+    Swal.fire({
+      title: "Good job!",
+      text: "You clicked the button!",
+      icon: "success"
+    });
+    
     $(document).ready(function()
     {
       let body = <HTMLDivElement> document.body;
